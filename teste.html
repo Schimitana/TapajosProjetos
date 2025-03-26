@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga Renara V Carvalho</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3E8EE;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .banner {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+    	    clip-path: ellipse(110% 100% at 50% 0%);
+
+            position: relative;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 120px; /* Ajuste para colocar a imagem sobre o banner */
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid white; /* Opcional: borda para dar destaque à imagem */
+        }
+        h1 {
+            color: #5A3E4D;
+            font-size: 22px;
+            margin-top: 80px; /* Ajuste para que o texto não fique sobre a imagem */
+        }
+        p {
+            color: #7A5C68;
+            font-size: 14px;
+        }
+        .button {
+            display: inline-block;
+            width: 50%;
+            padding: 12px;
+            margin: 8px 0;
+            text-decoration: none;
+            color: white;
+            background: #A47C95;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #8C6A7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagem de banner -->
+        <img src="https://www.w3schools.com/w3images/forest.jpg" class="banner" alt="Banner Psicologia">
+        <!-- Imagem de perfil sobre o banner -->
+        <img src="https://www.w3schools.com/w3images/avatar2.png" class="profile-img" alt="Psicóloga Renara V Carvalho">
+        <h1>Psicóloga Renara V Carvalho</h1>
+        <p>Atendimento humanizado para o seu bem-estar emocional.</p>
+        <a href="#" class="button">Agendar Consulta</a>
+        <a href="#" class="button">Saiba Mais</a>
+        <a href="#" class="button">Contato</a>
+    </div>
+</body>
+</html>
