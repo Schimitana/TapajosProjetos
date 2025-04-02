@@ -3,83 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicóloga Renara V Carvalho</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F3E8EE;
-            text-align: center;
-        }
-        .container {
-            max-width: 400px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        .banner {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-    	    clip-path: ellipse(110% 100% at 50% 0%);
-
-            position: relative;
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            position: absolute;
-            top: 120px; /* Ajuste para colocar a imagem sobre o banner */
-            left: 50%;
-            transform: translateX(-50%);
-            border: 4px solid white; /* Opcional: borda para dar destaque à imagem */
-        }
-        h1 {
-            color: #5A3E4D;
-            font-size: 22px;
-            margin-top: 80px; /* Ajuste para que o texto não fique sobre a imagem */
-        }
-        p {
-            color: #7A5C68;
-            font-size: 14px;
-        }
-        .button {
-            display: inline-block;
-            width: 50%;
-            padding: 12px;
-            margin: 8px 0;
-            text-decoration: none;
-            color: white;
-            background: #A47C95;
-            border-radius: 25px;
-            font-size: 14px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .button:hover {
-            background: #8C6A7E;
-        }
-    </style>
+    <title>Tapajós Projetos | Links Oficiais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- Imagem de banner -->
-        <img src="https://www.w3schools.com/w3images/forest.jpg" class="banner" alt="Banner Psicologia">
-        <!-- Imagem de perfil sobre o banner -->
-        <img src="https://www.w3schools.com/w3images/avatar2.png" class="profile-img" alt="Psicóloga Renara V Carvalho">
-        <h1>Psicóloga Renara V Carvalho</h1>
-        <p>Atendimento humanizado para o seu bem-estar emocional.</p>
-        <a href="#" class="button">Agendar Consulta</a>
-        <a href="#" class="button">Saiba Mais</a>
-        <a href="#" class="button">Contato</a>
+        <!-- Cabeçalho com logo -->
+        <div class="header">
+            <img src="assets/logo.png" alt="Tapajós Projetos" class="logo">
+            <h1>Tapajós Projetos</h1>
+            <p>Consultoria Agrícola e Regularização Fundiária</p>
+        </div>
+
+        <!-- Abas de navegação -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('servicos')"><i class="fas fa-tractor"></i> Serviços</button>
+            <button class="tab-btn" onclick="openTab('contato')"><i class="fas fa-phone-alt"></i> Contato</button>
+            <button class="tab-btn" onclick="openTab('localizacao')"><i class="fas fa-map-marker-alt"></i> Localização</button>
+        </div>
+
+        <!-- Conteúdo das abas -->
+        <div id="servicos" class="tab-content active">
+            <h2><i class="fas fa-leaf"></i> Nossos Serviços</h2>
+            <ul class="services-list">
+                <li><i class="fas fa-seedling"></i> Projetos de Crédito Rural</li>
+                <li><i class="fas fa-file-signature"></i> Regularização Fundiária</li>
+                <li><i class="fas fa-home"></i> Venda de Imóveis Rurais</li>
+                <li><i class="fas fa-building"></i> Crédito Empresarial</li>
+            </ul>
+        </div>
+
+        <div id="contato" class="tab-content">
+            <h2><i class="fas fa-headset"></i> Fale Conosco</h2>
+            <a href="https://wa.me/5593991889490" class="link-btn whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp (Trairão)
+            </a>
+            <a href="tel:+5593984161157" class="link-btn">
+                <i class="fas fa-phone"></i> Itaituba
+            </a>
+            <a href="tel:+5593991439340" class="link-btn">
+                <i class="fas fa-phone"></i> Santarém
+            </a>
+        </div>
+
+        <div id="localizacao" class="tab-content">
+            <h2><i class="fas fa-map"></i> Nossas Unidades</h2>
+            <div class="location-card">
+                <h3><i class="fas fa-city"></i> Itaituba - PA</h3>
+                <p>Rod. Transamazônica km 6, s/nº, Jardim América</p>
+            </div>
+            <div class="location-card">
+                <h3><i class="fas fa-tree"></i> Trairão - PA</h3>
+                <p>Travessa João Paulo II, nº 210, Bela Vista</p>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <p>Siga-nos: <a href="https://instagram.com/tapajosprojetos" target="_blank">@tapajosprojetos</a></p>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
