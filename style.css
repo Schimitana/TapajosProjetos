@@ -1,0 +1,201 @@
+/* Reset e Variáveis de Cor */
+:root {
+    --verde-musgo: #4A6B3D;
+    --marrom-madeira: #8B5A2B;
+    --dourado: #D4A762;
+    --fundo: #F8F5F0;
+    --texto: #333333;
+    --whatsapp: #25D366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+.header {
+    padding: 25px;
+    text-align: center;
+    background: linear-gradient(rgba(74, 107, 61, 0.9), rgba(74, 107, 61, 0.9)), 
+                url('assets/textura-madeira-clara.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.header .logo {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Abas */
+.tabs {
+    display: flex;
+    background-color: var(--marrom-madeira);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tab-btn.active {
+    background: var(--dourado);
+    color: var(--texto);
+}
+
+/* Conteúdo das Abas */
+.tab-content {
+    padding: 20px;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    color: var(--verde-musgo);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Lista de Serviços */
+.services-list {
+    list-style: none;
+}
+
+.services-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.services-list li i {
+    color: var(--dourado);
+    font-size: 1.2em;
+}
+
+/* Botões */
+.link-btn {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    background: var(--verde-musgo);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-btn i {
+    margin-right: 8px;
+}
+
+.link-btn.whatsapp {
+    background: var(--whatsapp);
+}
+
+/* Cards de Localização */
+.location-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--dourado);
+}
+
+.location-card h3 {
+    color: var(--marrom-madeira);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.location-card p {
+    color: var(--texto);
+    font-size: 0.9em;
+}
+
+/* Rodapé */
+.footer {
+    padding: 15px;
+    text-align: center;
+    background: var(--marrom-madeira);
+    color: white;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: var(--dourado);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+    .tab-btn {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
