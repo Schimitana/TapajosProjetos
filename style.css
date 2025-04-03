@@ -1,11 +1,10 @@
-/* Reset e Variáveis de Cor */
 :root {
-    --verde-musgo: #4A6B3D;
-    --marrom-madeira: #8B5A2B;
-    --dourado: #D4A762;
-    --fundo: #F8F5F0;
-    --texto: #333333;
-    --whatsapp: #25D366;
+    --verde-escuro: #2E5E3A;
+    --bege: #2e5e3ad0;
+    
+    --dourado: #D4A017;
+    --preto: #333333;
+    --branco: #F5F0E6;
 }
 
 * {
@@ -15,187 +14,207 @@
 }
 
 body {
-    background-color: var(--fundo);
-    color: var(--texto);
+    background-color: var(--bege);
+    color: var(--preto);
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
-    width: 100%;
-    max-width: 500px;
-    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--branco);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Cabeçalho */
 .header {
-    padding: 25px;
+    padding: 30px;
     text-align: center;
-    background: linear-gradient(rgba(74, 107, 61, 0.9), rgba(74, 107, 61, 0.9)), 
-                url('assets/textura-madeira-clara.jpg');
-    background-size: cover;
-    color: white;
+    background: linear-gradient(rgba(46, 94, 58, 0.1), rgba(46, 94, 58, 0.05));
 }
 
-.header .logo {
-    max-width: 120px;
-    margin-bottom: 10px;
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--dourado);
+    margin-bottom: 15px;
 }
 
 .header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
+    color: var(--verde-escuro);
     margin-bottom: 5px;
+    font-size: 1.8rem;
 }
 
 .header p {
-    font-size: 0.9em;
-    opacity: 0.9;
+    color: var(--preto);
+    opacity: 0.8;
+    font-size: 0.9rem;
 }
 
-/* Abas */
-.tabs {
-    display: flex;
-    background-color: var(--marrom-madeira);
-}
-
-.tab-btn {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    background: transparent;
-    color: white;
-    cursor: pointer;
+/* Destaque */
+.destaque {
+    padding: 15px;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    font-style: italic;
     font-weight: 600;
-    font-size: 0.9em;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    margin: 0 20px;
+    border-radius: 8px;
+    position: relative;
+    top: -15px;
+    box-shadow: 0 3px 10px rgba(46, 94, 58, 0.4);
 }
 
-.tab-btn.active {
-    background: var(--dourado);
-    color: var(--texto);
-}
-
-/* Conteúdo das Abas */
-.tab-content {
+/* Serviços */
+.servicos {
     padding: 20px;
-    display: none;
 }
 
-.tab-content.active {
-    display: block;
-}
-
-.tab-content h2 {
-    color: var(--verde-musgo);
+.servicos h2 {
+    color: var(--verde-escuro);
     margin-bottom: 15px;
-    font-family: 'Playfair Display', serif;
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 1.4rem;
 }
 
-/* Lista de Serviços */
-.services-list {
-    list-style: none;
+.servico-card {
+    background-color: var(--branco);
+    border: 1px solid rgba(46, 94, 58, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
 }
 
-.services-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
+.servico-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(46, 94, 58, 0.1);
+    border-color: var(--dourado);
+}
+
+.servico-card h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.servico-card p {
+    color: var(--preto);
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* Contato */
+.contato {
+    padding: 20px;
+}
+
+.contato h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    font-size: 1.4rem;
 }
 
-.services-list li i {
-    color: var(--dourado);
-    font-size: 1.2em;
-}
-
-/* Botões */
-.link-btn {
+.whatsapp-btn {
     display: block;
-    padding: 12px;
-    margin: 10px 0;
-    background: var(--verde-musgo);
-    color: white;
+    background-color: #0f7e37;
+    color: var(--branco);
     text-align: center;
-    text-decoration: none;
+    padding: 12px;
     border-radius: 8px;
-    transition: all 0.3s;
+    text-decoration: none;
     font-weight: 600;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
 }
 
-.link-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
 }
 
-.link-btn i {
+.whatsapp-btn i {
     margin-right: 8px;
 }
 
-.link-btn.whatsapp {
-    background: var(--whatsapp);
-}
-
-/* Cards de Localização */
-.location-card {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-left: 4px solid var(--dourado);
-}
-
-.location-card h3 {
-    color: var(--marrom-madeira);
+.telefones p {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 5px;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--preto);
 }
 
-.location-card p {
-    color: var(--texto);
-    font-size: 0.9em;
+.telefones i {
+    color: var(--verde-escuro);
+}
+
+/* Localização */
+.localizacao {
+    padding: 20px;
+}
+
+.localizacao h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+
+.local-card {
+    background-color: var(--branco);
+    border: 1px solid rgba(46, 94, 58, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+}
+
+.local-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(46, 94, 58, 0.1);
+    border-color: var(--dourado);
+}
+
+.local-card h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.local-card p {
+    color: var(--preto);
+    opacity: 0.8;
+    font-size: 0.9rem;
 }
 
 /* Rodapé */
 .footer {
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    background: var(--marrom-madeira);
-    color: white;
-    font-size: 0.9em;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
 }
 
 .footer a {
     color: var(--dourado);
     text-decoration: none;
     font-weight: 600;
-}
-
-/* Responsividade */
-@media (max-width: 480px) {
-    .header {
-        padding: 20px;
-    }
-    .tab-btn {
-        font-size: 0.8em;
-        padding: 10px;
-    }
 }
