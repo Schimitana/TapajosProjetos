@@ -3,60 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tapajós Projetos | Links Oficiais</title>
+    <title>Tapajós Projetos | Consultoria Rural</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- Cabeçalho com logo -->
+        <!-- Cabeçalho com Foto -->
         <div class="header">
-            <img src="perfil.png" alt="Tapajós Projetos" class="logo">
+            <img src="assets/foto-perfil.jpg" alt="Tapajós Projetos" class="profile-img">
             <h1>Tapajós Projetos</h1>
-            <p>Consultoria Agrícola e Regularização Fundiária</p>
+            <p>Projetos de Crédito Rural e Regularização Fundiária</p>
         </div>
 
-        <!-- Abas de navegação -->
-        <div class="tabs">
-            <button class="tab-btn active" onclick="openTab('servicos')"><i class="fas fa-tractor"></i> Serviços</button>
-            <button class="tab-btn" onclick="openTab('contato')"><i class="fas fa-phone-alt"></i> Contato</button>
-            <button class="tab-btn" onclick="openTab('localizacao')"><i class="fas fa-map-marker-alt"></i> Localização</button>
+        <!-- Destaque Principal -->
+        <div class="destaque">
+            <p>"Com orientação técnica da Tapajós, seu projeto avança!"</p>
         </div>
 
-        <!-- Conteúdo das abas -->
-        <div id="servicos" class="tab-content active">
-            <h2><i class="fas fa-leaf"></i> Nossos Serviços</h2>
-            <ul class="services-list">
-                <li><i class="fas fa-seedling"></i> Projetos de Crédito Rural</li>
-                <li><i class="fas fa-file-signature"></i> Regularização Fundiária</li>
-                <li><i class="fas fa-home"></i> Venda de Imóveis Rurais</li>
-                <li><i class="fas fa-building"></i> Crédito Empresarial</li>
-            </ul>
+        <!-- Serviços -->
+        <div class="servicos">
+            <h2><i class="fas fa-tractor"></i> Nossos Serviços/Produtos</h2>
+            <div class="servico-card">
+                <h3>Crédito Rural</h3>
+                <p>Financiamento para seu agronegócio com as melhores taxas.</p>
+            </div>
+            <div class="servico-card">
+                <h3>Regularização Fundiária</h3>
+                <p>Documentação em dia para sua propriedade rural.</p>
+            </div>
+            <div class="servico-card">
+                <h3>Imóveis Rurais</h3>
+                <p>Adquira o seu tão sonhado imóvel rural, com as melhores condições.</p>
+            </div>
         </div>
 
-        <div id="contato" class="tab-content">
-            <h2><i class="fas fa-headset"></i> Fale Conosco</h2>
-            <a href="https://wa.me/5593991889490" class="link-btn whatsapp">
+        <!-- Contato -->
+        <div class="contato">
+            <h2><i class="fas fa-phone-alt"></i> Contato</h2>
+            <a href="https://wa.me/559384161157?text=Ol%C3%A1%20Ademir%2C%20vim%20pelo%20Instagram%20e%20gostaria%20de%20mais%20inform%C3%A7%C3%B5es." class="whatsapp-btn">
                 <i class="fab fa-whatsapp"></i> WhatsApp (Trairão)
             </a>
-            <a href="tel:+5593984161157" class="link-btn">
-                <i class="fas fa-phone"></i> Itaituba
-            </a>
-            <a href="tel:+5593991439340" class="link-btn">
-                <i class="fas fa-phone"></i> Santarém
-            </a>
+            <div class="telefones">
+                <p><i class="fas fa-phone"></i> Itaituba: (93) 98416-1157</p>
+                <p><i class="fas fa-phone"></i> Santarém: (93) 99143-9340</p>
+            </div>
         </div>
 
-        <div id="localizacao" class="tab-content">
-            <h2><i class="fas fa-map"></i> Nossas Unidades</h2>
-            <div class="location-card">
-                <h3><i class="fas fa-city"></i> Itaituba - PA</h3>
+        <!-- Localização -->
+        <div class="localizacao">
+            <h2><i class="fas fa-map-marker-alt"></i> Onde Estamos</h2>
+            <div class="local-card">
+                <h3>Itaituba - PA</h3>
                 <p>Rod. Transamazônica km 6, s/nº, Jardim América</p>
-            </div>
-            <div class="location-card">
-                <h3><i class="fas fa-tree"></i> Trairão - PA</h3>
-                <p>Travessa João Paulo II, nº 210, Bela Vista</p>
             </div>
         </div>
 
@@ -65,7 +65,5 @@
             <p>Siga-nos: <a href="https://instagram.com/tapajosprojetos" target="_blank">@tapajosprojetos</a></p>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
