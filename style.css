@@ -39,8 +39,8 @@ body {
 }
 
 .profile-img {
-    width: 116px;
-    height: 125px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border: solid 2px #2e5e3ae1;
@@ -50,7 +50,7 @@ body {
 .header h1 {
     font-family: 'Playfair Display', serif;
     color: var(--verde-escuro);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 1.8rem;
 }
 
@@ -86,7 +86,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.4rem;
+    font-size: 20px;
 }
 
 .servico-card {
@@ -131,12 +131,12 @@ body {
 }
 
 .whatsapp-btn {
-    margin-left: 15%;
+    margin-left: 8%;
     display: block;
     background-color: #0f7e37;
     color: var(--branco);
     text-align: center;
-    width: 70%;
+    width: 85%;
     padding: 12px;
     border-radius: 10px;
     text-decoration: none;
